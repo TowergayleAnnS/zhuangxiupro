@@ -1,0 +1,40 @@
+<div class="search-box">
+	
+	<div>
+		<section class="top-left">案例户型</section>
+		<section class="top-right">
+			<div class="ctype-item search-active" onclick="ctypeClick(event)">全部</div>
+			
+			<% for (let i = 0;i<ctypes.length;i++){%>
+				<div class="ctype-item" onclick="ctypeClick(event)"><%= ctypes[i].fields.name%></div>
+			<%}%>
+		</section>
+	</div>
+	<div>
+		<section class="top-left">装修风格</section>
+		<section class="top-right">
+			<div class="cstyle-item search-active" onclick="cstyleClick(event)">全部</div>
+			<% for (let i = 0;i<cstyles.length;i++){%>
+				<div class="cstyle-item" onclick="cstyleClick(event)"><%= cstyles[i].fields.name%></div>
+			<%}%>
+		</section>
+	</div>
+	
+	<form class="form-control">
+		<input type="text" id="name" name="name" placeholder="请输入姓名" required>
+		<input type="text" id="phone" name="phone" placeholder="请输入电话" required>
+		<input type="text" id="floor" name="floor" placeholder="请输入楼盘" required>
+		<input type="text" id="area" name="area" placeholder="请输入面积"required>
+		
+		<div>
+			<img src="/captcha" onclick="changeCaptcha(event)" id="captcha-img" alt="">
+			<!-- <a href="javascript();" id="changeCaptcha" ">看不清，换一张？</a> -->
+			<input type="text" id="captcha" name="captcha" placeholder="请输入验证码">
+		</div>
+		<button>咨询报价</button>
+	
+</div>
+
+<div id="case">
+	
+</div>

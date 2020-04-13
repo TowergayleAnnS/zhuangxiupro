@@ -1,0 +1,140 @@
+*{
+	box-sizing: border-box;
+}
+#main{
+	width: 1400px;
+	margin: 0 auto;
+}
+
+.search-box{
+	width: 1400px;
+}
+.search-box>div{
+	display: flex;
+	border: 1px solid lightgrey;
+	/* height: 44px;
+	line-height: 44px; */
+	
+	text-align: center;
+}
+
+.top-left{
+	width: 140px;
+	flex-shrink: 0;
+	padding: 15px;
+}
+.top-right{
+	display: flex;
+	border-left: 1px solid lightgrey;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 5px;
+}
+.top-right>div{
+	margin: 5px 10px;
+	padding: 0 20px;
+	height: 35px;
+	line-height: 35px;
+	cursor: pointer;
+}
+.search-active{
+	background-color: red;
+	color: white;
+}
+.case-box{
+	width: 1400px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.case-box a{
+	text-decoration: none;
+	color: black;
+}
+.case-item{
+	width: 320px;
+	/* height: 500px; */
+	margin: 10px 0;
+	margin-right: calc(120px / 3);
+}
+
+.case-item:hover{
+	box-shadow: 0 0 10px gray;
+}
+.case-box>a:nth-of-type(4n)>section{
+	margin-right: 0;
+}
+ 
+.case-item>img{
+	width: 320px;
+	height: 240px;
+}
+.case-info{
+	display: flex;
+	padding: 10px
+}
+.case-info>img{
+	width: 100px;
+	height: 140px;
+	margin-right: 10px;
+}
+.case-content>div{
+	width: 120px;
+	height: 33px;
+	border: 1px orangered solid;
+	text-align: center;
+	line-height: 33px;
+	color: orangered;
+	cursor: pointer;
+}
+
+.case-content>div:hover{
+	background-color: orangered;
+	color: white;
+}
+.form-control{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px 0;
+}
+.form-control>input{
+	width: 200px;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid lightgrey;
+	outline: none;
+	padding-left: 10px;
+	
+}
+.form-control>button{
+	width: 200px;
+	height: 30px;
+	background-color: orangered;
+	color: white;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+}
+.form-control>div{
+	width: 300px;
+	height: 30px;
+	display: flex;
+
+	
+}
+.form-control>div>img{
+	width: 100px;
+	height: 30px;
+}
+.form-control>div>input{
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid lightgrey;
+	outline: none;
+	padding-left: 5px;
+	position: relative;
+	left: -5px;
+	
+}
+	

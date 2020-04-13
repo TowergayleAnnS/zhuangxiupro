@@ -1,0 +1,20 @@
+<div class="case-box">
+	<% for (let i=0;i<cases.length;i++){%>
+	<a href="/case-detail.html?cid=<%= cases[i].pk%>">
+		<section class="case-item">
+			<img src="<%= cases[i].fields.pic%>" alt="">
+			<div class="case-info">
+				<img src="<%= cases[i].fields.designer.fields.pic%>" alt="">
+				<div class="case-content">
+					<h4><%= cases[i].fields.title%></h4>
+					<p><%= cases[i].fields.case_style%>-<%= cases[i].fields.case_type%>-<%= cases[i].fields.case_area%>平米</p>
+					<div>
+						找TA设计
+					</div>
+				</div>
+			</div>
+		</section>
+	</a>
+	<%}%>
+	
+</div>
